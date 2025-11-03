@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Number Guessing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <h1>🔢 Guess the Number</h1>
+            <div class="player-info">
+                Player: <span id="currentPlayer">Unknown</span> | 
+                Attempts: <span id="attemptCount">0</span>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="guessInput" placeholder="Enter your guess (1-100)" maxlength="3">
+                <button onclick="makeGuess()">Guess</button>
+                <button onclick="quitGame()" class="quit-btn">Quit Game</button>
+            </div>
+            
+            <div id="gameMessage" class="game-message"></div>
+            <div id="error" class="error-message"></div>
+            
+            <div class="attempts-history">
+                <h3>Your Guesses:</h3>
+                <div id="attemptsList"></div>
+            </div>
+            
+            <button onclick="goHome()" class="home-btn">← Back to Home</button>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

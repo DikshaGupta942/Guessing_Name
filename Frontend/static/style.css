@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.game-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+.quit-btn {
+    background: #e74c3c;
+}
+
+.quit-btn:hover {
+    background: #c0392b;
+}
+
+.home-btn {
+    background: #95a5a6;
+    margin-top: 20px;
+}
+
+.home-btn:hover {
+    background: #7f8c8d;
+}
+
+.game-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.game-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.game-message.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.game-message.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.player-info {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.game-rules {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.game-rules h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.game-rules ul {
+    list-style-position: inside;
+    color: #666;
+}
+
+.game-rules li {
+    margin-bottom: 8px;
+}
+
+.attempts-history {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.attempts-history h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#attemptsList {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.attempt-item {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #667eea;
+}
