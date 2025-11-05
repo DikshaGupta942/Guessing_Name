@@ -133,7 +133,7 @@ function updateGameUI(data) {
     if (data.status === 'won') {
         gameMessage.classList.add('success');
 
-        gameMessage.textContent = `🎉 ${data.hint}  ${data.target_number}! You found the number in ${data.attempts} attempts!`;
+        gameMessage.textContent = `🎉 ${data.hint}  ${data.target_number}! You found the correct number in ${data.attempts} attempts!`;
 
     } else if (data.status === 'quit') {
         gameMessage.classList.add('warning');
