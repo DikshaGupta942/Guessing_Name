@@ -131,7 +131,7 @@ function updateGameUI(data) {
     gameMessage.className = 'game-message';
 
     if (data.status === 'won') {
-        gameMessage.classList.add('success');
+        gameMessage.classList.add('Success');
 
         gameMessage.textContent = `🎉 ${data.hint}  ${data.target_number}! You found the correct number in ${data.attempts} attempts!`;
 
